@@ -1,0 +1,14 @@
+---
+---
+
+# [Developing Data Products](index.html)
+
+Remember to read the book chapters on Shiny.
+
+Shiny is an important enough topic to devote a lot of time to it. Shiny is another product by RStudio and it is described by RStudio as “A web application framework for R”. They further add “Turn your analyses into interactive web applications No HTML, CSS, or JavaScript knowledge required”. This is mostly true, though a little HTML at least would be useful for understanding some of the concepts. Here’s a useful site for learning html basics. We’ll proceed as if your html knowledge is very basic and no more advanced than understanding heading levels for fonts. It is important to dinstiguish between a Shiny applications (app) and a Shiny server. A Shiny server is required to host a shiny app for the world. Otherwise, only those who have have shiny installed and have access to your code could run your web page (really defeating the purpose of making a web page in the first place).
+
+In this class, we won’t cover creating a shiny server, as that requires understanding a little linux server administration. Instead, we’ll run our apps locally and use RStudio’s service for hosting shiny apps (their servers) on a platform called shinyapps.io. In other words, RStudio does the server work for your so that all you need to worry about is building your app. Shinyapps.io is free up to a point in that you can only run 5 apps for a certain amount of time per month. This will be fine for our purposes, but if you’re really going to get into making Shiny apps, you’ll have to spring for a paid plan or run your own server.
+
+---
+
+[**Back to Developing Data Products Home**](index.html)

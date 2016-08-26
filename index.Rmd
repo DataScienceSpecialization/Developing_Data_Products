@@ -1,0 +1,50 @@
+---
+---
+
+# [Developing Data Products](index.html)
+
+## Instructor
+
+- [Brian Caffo](http://www.bcaffo.com/)
+
+## Class Website
+
+- [Developing Data Products on Coursera.org](https://www.coursera.org/learn/data-products)
+
+## Textbook
+
+- [Developing Data Products in R](https://leanpub.com/ddp)
+
+
+## Course Materials
+
+| Week/Lecture  | Lecture  |  Video | Notes | Code |
+|:------------|:------------|:------------|:------------|:------------|
+| 1/1 | Welcome | --- | [html](welcome.html) [pdf](welcome.pdf)| --- |
+| 1/2 | Syllabus | --- | [html](syllabus.html) [pdf](syllabus.pdf)| --- |
+| 1/3 | Book: Developing Data Products in R | --- | [html](book.html) [pdf](book.pdf) | --- |
+| 1/4 | Data Science Specialization Community Site | --- | [html](community.html) [pdf](community.pdf) | --- |
+| 1/5 | Shiny: Reading | --- | [html](shiny.html) [pdf](shiny.pdf)| --- |
+| 1/6 | Shiny: Part 1 | --- | [html](./Shiny_Part_1/Shiny_Part_1.html) [pdf](./Shiny_Part_1/Shiny_Part_1.pdf)| --- |
+| 1/7 | Shiny: Part 2 | --- | [html](./Shiny_Part_2/Shiny_Part_2.html) [pdf](./Shiny_Part_2/Shiny_Part_2.pdf)| --- |
+| 1/8 | Shiny Gadgets | --- | [html](./Shiny_Gadgets/Shiny_Gadgets.html) [pdf](./Shiny_Gadgets/Shiny_Gadgets.pdf)| --- |
+| 1/9 | shinyapps.io Project | --- | [html](shinyproject.html) [pdf](shinyproject.pdf)| --- |
+| 1/10 | GoogleVis | --- | [html](./googleVis/googleVis.html) [pdf](./googleVis/googleVis.pdf)| --- |
+| 1/11 | Plotly | --- | [html](./plotly/plotly.html) [pdf](./plotly/plotly.pdf)| --- |
+| --- | --- | --- | --- | --- |
+| 2/1 | R Markdown | --- | [html](./R_Markdown/R_Markdown.html) [pdf](./R_Markdown/R_Markdown.pdf)| --- |
+| 2/2 | Sharing R Markdown Documents | --- | [html](./R_Markdown/sharing.html) [pdf](./R_Markdown/sharing.pdf)| --- |
+| 2/3 | Leaflet | --- | [html](./leaflet/leaflet.html) [pdf](./leaflet/leaflet.pdf)| --- |
+| --- | --- | --- | --- | --- |
+| 3/1 | R Packages | --- | [html](./RPackages/rpackages.html) [pdf](./RPackages/rpackages.pdf)| --- |
+| --- | --- | --- | --- | --- |
+| 4/1 | Swirl Courses | --- | [html](./swirl/swirl.html) [pdf](./swirl/swirl.pdf)| --- |
+
+## Resources
+
+- [Installing R for Windows](https://www.youtube.com/watch?v=LII6of-5Odw)
+- [Installing R for Mac](https://www.youtube.com/watch?v=xokJUwn0mis)
+- [Installing RStudio Mac](https://www.youtube.com/watch?v=JbTMvQ-SbvQ)
+
+- [Rstudio](http://www.rstudio.com/), [R project](http://www.r-project.org/)
+- [Rstudio's cheatsheets](http://www.rstudio.com/resources/cheatsheets/) 

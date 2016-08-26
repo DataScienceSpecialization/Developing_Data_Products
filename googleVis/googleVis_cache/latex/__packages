@@ -1,0 +1,17 @@
+base
+rmarkdown
+googleVis
+bookdown
+tibble
+knitr
+stringr
+xml2
+rvest
+magrittr
+purrr
+dplyr
+tidytext
+tidyr
+ggplot2
+plotly
+swirl

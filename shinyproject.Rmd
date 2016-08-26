@@ -1,0 +1,14 @@
+---
+---
+
+# [Developing Data Products](index.html)
+
+Some people in this session let us know that they are concerned about running up against the 25-hour per month limit on the free tier of shinyapps.io.
+
+Should you hit the limit on the free plan, RStudio will send you a message. If you receive the message and are more than a few days from getting a fresh 25 hours on your monthly renewal, please send an email to shinyapps-support@rstudio.com with the email address you use on the service and the account name you are using (the first part of the URL). RStudio will then increase your limit so you can continue working on your project.
+
+Since there are a lot of folks in the class we'd appreciate if you only emailed RStudio after you get the message and only if you feel you'll need more time.
+
+---
+
+[**Back to Developing Data Products Home**](index.html)
