@@ -37,6 +37,7 @@
 | 2/3 | Leaflet | --- | [html](./leaflet/leaflet.html) [pdf](./leaflet/leaflet.pdf)| --- |
 | --- | --- | --- | --- | --- |
 | 3/1 | R Packages | --- | [html](./RPackages/rpackages.html) [pdf](./RPackages/rpackages.pdf)| --- |
+| 3/2 | Classes & Methods | --- | [html](./Classes_and_Methods/Classes_and_Methods.html) [pdf](./Classes_and_Methods/Classes_and_Methods.pdf)| --- |
 | --- | --- | --- | --- | --- |
 | 4/1 | Swirl Courses | --- | [html](./swirl/swirl.html) [pdf](./swirl/swirl.pdf)| --- |
 
