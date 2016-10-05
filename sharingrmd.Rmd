@@ -1,0 +1,24 @@
+---
+---
+
+# [Developing Data Products](index.html)
+
+## Sharing R Markdown Documents
+
+We recommend the following websites for sharing the HTML files that you produce
+from R Markdown documents. If you've taken The Data Scientist's Toolbox then 
+you should be familiar with [GitHub Pages](https://pages.github.com/). 
+If you're familiar with Git and you haven't used it before their documentation
+for creating a site is very straightforward. If you're not familiar with Git 
+and you're using RStudio you should take advantage of 
+[RPubs](http://rpubs.com/), which is perhaps the easiest way to share an HTML 
+document from RStudio. You can find simple instructions for using RPubs
+[here](http://rpubs.com/about/getting-started). If you're looking for a site 
+that will host any HTML file for free, including HTML files that are generated 
+by R Markdown, you should check out [NeoCities](https://neocities.org/). You'll
+need to provide links to HTML files you've created with R Makrdown in upcoming
+peer assessments, so make sure to familiarize yourself with one of these sites.
+
+---
+
+[**Back to Developing Data Products Home**](index.html)

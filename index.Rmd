@@ -33,7 +33,7 @@
 | 1/11 | Plotly | --- | [html](./plotly/plotly.html) [pdf](./plotly/plotly.pdf)| --- |
 | --- | --- | --- | --- | --- |
 | 2/1 | R Markdown | --- | [html](./R_Markdown/R_Markdown.html) [pdf](./R_Markdown/R_Markdown.pdf)| --- |
-| 2/2 | Sharing R Markdown Documents | --- | [html](./R_Markdown/sharing.html) [pdf](./R_Markdown/sharing.pdf)| --- |
+| 2/2 | Sharing R Markdown Documents | --- | [html](./sharingrmd.html) [pdf](./sharingrmd.pdf)| --- |
 | 2/3 | Leaflet | --- | [html](./leaflet/leaflet.html) [pdf](./leaflet/leaflet.pdf)| --- |
 | --- | --- | --- | --- | --- |
 | 3/1 | R Packages | --- | [html](./RPackages/rpackages.html) [pdf](./RPackages/rpackages.pdf)| --- |
