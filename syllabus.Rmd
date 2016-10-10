@@ -38,7 +38,7 @@ The most up to date information on the course lecture notes will always be in th
 
 The data science specialization is here
 
-https://github.com/bcaffo/courses/tree/master/09\_DevelopingDataProducts
+https://github.com/DataScienceSpecialization/Developing_Data_Products
 
 Please issue pull requests so that we may improve the materials.
 

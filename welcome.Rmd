@@ -51,7 +51,8 @@ R and very basic knitr.
 
 An important aspect of this class is to peruse the materials
 in the github repository. All of the most up to date 
-material can be found here: https://github.com/bcaffo/courses/tree/master/09_DevelopingDataProducts
+material can be found here: 
+https://github.com/DataScienceSpecialization/Developing_Data_Products
 
 You should clone this repository as your first step in this
 class and make sure to fetch updates periodically. (Please 
@@ -62,9 +63,9 @@ the tools in the series to create the series, especially git.
 
 You can clone the whole repo with (http)
 
-- `git clone https://github.com/bcaffo/courses.git`
+- `git clone https://github.com/DataScienceSpecialization/Developing_Data_Products.git`
 - or `(ssh)`
-- `git clone git@github.com:bcaffo/courses.git`
+- `git clone git@github.com:DataScienceSpecialization/Developing_Data_Products.git`
 
 The lectures are in the index.Rmd lecture files. In this 
 class, we'll cover how to create these sorts of slides. You
