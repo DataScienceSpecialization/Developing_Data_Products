@@ -27,18 +27,21 @@ account on their site.
 
 A basic scatterplot is easy to make, with the added benefit of tooltips that
 appear when your mouse hovers over each point. Specify a scatterplot by
-indicating `mode = "markers"`.
+indicating `type = "scatter"`. Notice that the arguments for the `x` and `y` 
+variables as specified as formulas, with the tilde operator (`~`) preceding the
+variable that you're plotting.
+
 
 ```{r, eval=FALSE}
 library(plotly)
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers")
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter")
 ```
 
 ## Basic Scatterplot
 
 ```{r, echo=FALSE, message=FALSE}
 library(plotly)
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers")
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter")
 ```
 
 ## Scatterplot Color
@@ -47,13 +50,13 @@ You can add color to your scatterplot points according to a categorical variable
 in the data frame you use with `plot_ly()`.
 
 ```{r, eval=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", color = as.factor(cyl))
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~factor(cyl))
 ```
 
 ## Scatterplot Color
 
 ```{r, echo=FALSE, message=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", color = as.factor(cyl))
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~factor(cyl))
 ```
 
 ## Continuous Color
@@ -61,13 +64,13 @@ plot_ly(mtcars, x = wt, y = mpg, mode = "markers", color = as.factor(cyl))
 You can also show continuous variables with color in scatterplots.
 
 ```{r, eval=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", color = disp)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~disp)
 ```
 
 ## Continuous Color
 
 ```{r, echo=FALSE, message=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", color = disp)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", color = ~disp)
 ```
 
 ## Scatterplot Sizing
@@ -76,15 +79,15 @@ By specifying the `size` argument you can make each point in your scatterplot a
 different size.
 
 ```{r, eval=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", 
-        color = as.factor(cyl), size = hp)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", 
+        color = ~factor(cyl), size = ~hp)
 ```
 
 ## Scatterplot Sizing
 
 ```{r, echo=FALSE, message=FALSE}
-plot_ly(mtcars, x = wt, y = mpg, mode = "markers", 
-        color = as.factor(cyl), size = hp)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", 
+        color = ~factor(cyl), size = ~hp)
 ```
 
 ## 3D Scatterplot
@@ -98,8 +101,8 @@ set.seed(2016-07-21)
 temp <- rnorm(100, mean = 30, sd = 5)
 pressue <- rnorm(100)
 dtime <- 1:100
-plot_ly(x = temp, y = pressue, z = dtime,
-        type = "scatter3d", mode = "markers", color = temp)
+plot_ly(x = ~temp, y = ~pressue, z = ~dtime,
+        type = "scatter3d", color = ~temp)
 ```
 
 ## 3D Scatterplot
@@ -109,8 +112,8 @@ set.seed(2016-07-21)
 temp <- rnorm(100, mean = 30, sd = 5)
 pressue <- rnorm(100)
 dtime <- 1:100
-plot_ly(x = temp, y = pressue, z = dtime,
-        type = "scatter3d", mode = "markers", color = temp)
+plot_ly(x = ~temp, y = ~pressue, z = ~dtime,
+        type = "scatter3d", color = ~temp)
 ```
 
 ## Line Graph
@@ -120,14 +123,14 @@ showing change over time:
 
 ```{r, eval=FALSE}
 data("airmiles")
-plot_ly(x = time(airmiles), y = airmiles)
+plot_ly(x = ~time(airmiles), y = ~airmiles, type = "scatter", mode = "lines")
 ```
 
 ## Line Graph
 
 ```{r, echo=FALSE, message=FALSE}
 data("airmiles")
-plot_ly(x = time(airmiles), y = airmiles)
+plot_ly(x = ~time(airmiles), y = ~airmiles, type = "scatter", mode = "lines")
 ```
 
 ## Multi Line Graph
@@ -145,7 +148,7 @@ stocks <- as.data.frame(EuStockMarkets) %>%
   gather(index, price) %>%
   mutate(time = rep(time(EuStockMarkets), 4))
 
-plot_ly(stocks, x = time, y = price, color = index)
+plot_ly(stocks, x = ~time, y = ~price, color = ~index, type = "scatter", mode = "lines")
 ```
 
 ## Multi Line Graph
@@ -160,7 +163,7 @@ stocks <- as.data.frame(EuStockMarkets) %>%
   gather(index, price) %>%
   mutate(time = rep(time(EuStockMarkets), 4))
 
-plot_ly(stocks, x = time, y = price, color = index)
+plot_ly(stocks, x = ~time, y = ~price, color = ~index, type = "scatter", mode = "lines")
 ```
 
 ## Histogram
@@ -169,13 +172,13 @@ A histogram is great for showing how counts of data are distributed. Use the
 `type = "histogram"` argument.
 
 ```{r, eval=FALSE}
-plot_ly(x = precip, type = "histogram")
+plot_ly(x = ~precip, type = "histogram")
 ```
 
 ## Histogram
 
 ```{r, echo=FALSE, message=FALSE}
-plot_ly(x = precip, type = "histogram")
+plot_ly(x = ~precip, type = "histogram")
 ```
 
 ## Boxplot
@@ -184,13 +187,13 @@ Boxplots are wonderful for comparing how different datastes are distributed.
 Specify `type = "box"` to create a boxplot.
 
 ```{r, eval=FALSE}
-plot_ly(iris, y = Petal.Length, color = Species, type = "box")
+plot_ly(iris, y = ~Petal.Length, color = ~Species, type = "box")
 ```
 
 ## Boxplot
 
 ```{r, echo=FALSE, message=FALSE}
-plot_ly(iris, y = Petal.Length, color = Species, type = "box")
+plot_ly(iris, y = ~Petal.Length, color = ~Species, type = "box")
 ```
 
 ## Heatmap
@@ -201,14 +204,14 @@ using color for the third dimension. Create a heatmap by using the
 
 ```{r, eval=FALSE}
 terrain1 <- matrix(rnorm(100*100), nrow = 100, ncol = 100)
-plot_ly(z = terrain1, type = "heatmap")
+plot_ly(z = ~terrain1, type = "heatmap")
 ```
 
 ## Heatmap
 
 ```{r, echo=FALSE, message=FALSE}
 terrain1 <- matrix(rnorm(100*100), nrow = 100, ncol = 100)
-plot_ly(z = terrain1, type = "heatmap")
+plot_ly(z = ~terrain1, type = "heatmap")
 ```
 
 ## 3D Surface
@@ -218,14 +221,14 @@ computer!? Create moveable 3D surfaces with `type = "surface"`.
 
 ```{r, eval=FALSE}
 terrain2 <- matrix(sort(rnorm(100*100)), nrow = 100, ncol = 100)
-plot_ly(z = terrain2, type = "surface")
+plot_ly(z = ~terrain2, type = "surface")
 ```
 
 ## 3D Surface
 
 ```{r, echo=FALSE, message=FALSE}
 terrain2 <- matrix(sort(rnorm(100*100)), nrow = 100, ncol = 100)
-plot_ly(z = terrain2, type = "surface")
+plot_ly(z = ~terrain2, type = "surface")
 ```
 
 ## Choropleth Maps: Setup
@@ -253,9 +256,9 @@ map_options <- list(
 ## Choropleth Maps: Mapping
 
 ```{r, eval=FALSE}
-plot_ly(state_pop, z = Pop, text = hover, locations = State, 
+plot_ly(z = ~state_pop$Pop, text = ~state_pop$hover, locations = ~state_pop$State, 
         type = 'choropleth', locationmode = 'USA-states', 
-        color = Pop, colors = 'Blues', marker = list(line = borders)) %>%
+        color = state_pop$Pop, colors = 'Blues', marker = list(line = borders)) %>%
   layout(title = 'US Population in 1975', geo = map_options)
 ```
 
@@ -276,9 +279,9 @@ map_options <- list(
   lakecolor = toRGB('white')
 )
 
-plot_ly(state_pop, z = Pop, text = hover, locations = State, 
+plot_ly(z = ~state_pop$Pop, text = ~state_pop$hover, locations = ~state_pop$State, 
         type = 'choropleth', locationmode = 'USA-states', 
-        color = Pop, colors = 'Blues', marker = list(line = borders)) %>%
+        color = state_pop$Pop, colors = 'Blues', marker = list(line = borders)) %>%
   layout(title = 'US Population in 1975', geo = map_options)
 ```
 
@@ -288,3 +291,4 @@ plot_ly(state_pop, z = Pop, text = hover, locations = State,
 - [The Plotly R API](https://plot.ly/r/)
 - [The Plotly R Package on GitHub](https://github.com/ropensci/plotly)
 - [The Plotly R Cheatsheet](https://images.plot.ly/plotly-documentation/images/r_cheat_sheet.pdf)
+- ["Plotly for R" book by Carson Sievert](https://cpsievert.github.io/plotly_book/)
