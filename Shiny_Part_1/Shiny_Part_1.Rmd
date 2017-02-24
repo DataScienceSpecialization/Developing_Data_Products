@@ -28,7 +28,7 @@ Shiny uses [Bootstrap](http://getbootstrap.com/) (no
 relation to the statistics bootstrap) style, which (to me) 
 seems to look nice and renders well on mobile platforms.
 
-## Availible Tutorials
+## Available Tutorials
 
 If you're interested in learning more about HTML, CSS, and
 Javascript we recommend any one of the following resources:
@@ -127,7 +127,7 @@ Now that you've played around with customizing the look of
 your app, let's give it some functionality! Shiny provides
 several types of inputs including buttons, checkboxes, text
 boxes, and calendars. First let's experiment with the slider
-input. This simple app will will display the number that is
+input. This simple app will display the number that is
 selected with a slider.
 
 ## Slider App: ui.R

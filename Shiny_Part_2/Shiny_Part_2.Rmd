@@ -6,7 +6,7 @@ always_allow_html: yes
 
 ## Reactivity
 
-A reactive expression is like a recipie that manipulates
+A reactive expression is like a recipe that manipulates
 inputs from Shiny and then returns a value. Reactivity
 provides a way for your app to respond since inputs will 
 change depending on how users interact with your user 
@@ -172,8 +172,8 @@ shinyUI(fluidPage(
 
 There are several other kinds of UI components that you can
 mix into your app including tabs, navbars, and sidebars.
-We'll show you an example of how to use tabs to give you app
-multiple views. The `tabsetPanel()` function speicifes a
+We'll show you an example of how to use tabs to give your app
+multiple views. The `tabsetPanel()` function specifies a
 group of tabs, and then the `tabPanel()` function specifies
 the contents of an individual tab.
 
@@ -224,10 +224,10 @@ shinyServer(function(input, output) {
 
 One of my favorite features of Shiny is the ability to create
 graphics that a user can interact with. One method you can
-use to select mutltiple data points on a graph is
+use to select multiple data points on a graph is
 by specifying the `brush` argument in `plotOutput()` on the
 `ui.R` side, and then using the `brushedPoints()` function on
-the `server.R` side. The following exmaple app fits a
+the `server.R` side. The following example app fits a
 linear model for the selected points and then draws a line 
 of best fit for the resulting model.
 
@@ -312,7 +312,7 @@ output$intOut <- renderText({
 Once you've created a Shiny app, there are several ways to
 share your app. Using [shinyapps.io](http://www.shinyapps.io/)
 allows users to interact with your app through a web browser
-without needing to have R or Shiny insatlled. Shinyapps.io
+without needing to have R or Shiny installed. Shinyapps.io
 has a free tier, but if you want to use a Shiny app in your
 business you may be interested in paying for the service. If
 you're sharing your app with an R user you can post your app

@@ -183,7 +183,7 @@ plot_ly(x = ~precip, type = "histogram")
 
 ## Boxplot
 
-Boxplots are wonderful for comparing how different datastes are distributed.
+Boxplots are wonderful for comparing how different datasets are distributed.
 Specify `type = "box"` to create a boxplot.
 
 ```{r, eval=FALSE}
