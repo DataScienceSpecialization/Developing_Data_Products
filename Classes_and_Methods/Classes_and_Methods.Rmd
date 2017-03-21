@@ -41,7 +41,7 @@ S4 classes/methods
 
 ## Object Oriented Programming in R
 
-- A class is a description of an thing. A class can be defined using `setClass()` in the *methods* package.
+- A class is a description of a thing. A class can be defined using `setClass()` in the *methods* package.
 - An _object_ is an instance of a class. Objects can be created using `new()`. 
 - A _method_ is a function that only operates on a certain class of objects.
 - A generic function is an R function which dispatches methods. A generic function typically encapsulates a "generic" concept (e.g. `plot`, `mean`, `predict`, ...)
@@ -88,7 +88,7 @@ class(fit)
 
 - S4 and S3 style generic functions look different but conceptually, they are the same (they play the same role).
 - When you program you can write new methods for an existing generic OR create your own generics and associated methods.
-- Of course, if a data type does not exist in R that matches your needs, you can always define a new class along with generics/methods that go with it
+- Of course, if a data type does not exist in R that matches your needs, you can always define a new class along with generics/methods that go with it.
 
 ## An S3 generic function (in the 'base' package)
 
@@ -268,7 +268,8 @@ I say things are "new" meaning that R does not know about them (not that they ar
 A new class can be defined using the `setClass` function
 - At a minimum you need to specify the name of the class
 - You can also specify data elements that are called _slots_
-- You can then define methods for the class with the `setMethod` function Information about a class definition can be obtained with the `showClass` function
+- You can then define methods for the class with the `setMethod` function 
+- Information about a class definition can be obtained with the `showClass` function
 
 ## S4 Class/Method: Polygon Class
 
@@ -281,7 +282,7 @@ setClass("polygon",
                         y = "numeric"))
 ```
 
-- The slots for this class are `x`and `y`
+- The slots for this class are `x` and `y`
 
 - The slots for an S4 object can be accessed with the `@` operator.
 
@@ -340,7 +341,7 @@ plot(p)
 
 - <b>Classes</b> define new data types
 
-- <b>Methods</b> extend <b>generic functions</b> to specificy the behavior
+- <b>Methods</b> extend <b>generic functions</b> to specify the behavior
     of generic functions on new classes
 
 - As new data types and concepts are created, classes/methods provide

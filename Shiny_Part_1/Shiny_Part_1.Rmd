@@ -83,7 +83,7 @@ shinyServer(function(input, output) {
 ## To run it
 - In R, change to the directories with these files and type `runApp()`
 - or put the path to the directory as an argument
-- It should open an browser window with the app running
+- It should open a browser window with the app running
 
 ## Your First Shiny App
 
