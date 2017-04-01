@@ -1,0 +1,20 @@
+---
+title: "R Markdown and Leaflet"
+output:
+  html_document: default
+  pdf_document: default
+always_allow_html: yes
+---
+ "`r format(Sys.time(), '%d %B, %Y')`"
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=16.314209, lng= 80.435028, popup="My COLLEGE")
+my_map
+```
+
