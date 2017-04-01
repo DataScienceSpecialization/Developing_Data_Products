@@ -1,0 +1,16 @@
+---
+title: "d1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=-26.158632, lng= 27.903283, popup="My Laboratory")
+my_map
+```
+
