@@ -278,8 +278,8 @@ Creating new classes/methods is usually not something done at the console; you l
 ```{r polygon_1, tidy = FALSE}
 library(methods)
 setClass("polygon",
-         representation(x = "numeric",
-                        y = "numeric"))
+         slots = c(x = "numeric", y = "numeric")
+)
 ```
 
 - The slots for this class are `x` and `y`
