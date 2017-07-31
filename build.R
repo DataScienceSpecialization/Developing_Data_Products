@@ -1,6 +1,8 @@
 args <- commandArgs()
 library(rmarkdown)
 
+make_pdf <- FALSE
+
 needs_making <- function(source_file, goal_file){
   !file.exists(goal_file) || file.mtime(source_file) > file.mtime(goal_file)
 }
@@ -39,7 +41,7 @@ for(i in seq_along(rmds)){
     print(htmls[i])
   }
   
-  if(needs_making(rmds[i], pdfs[i])){
+  if(needs_making(rmds[i], pdfs[i]) && make_pdf){
     if(dirname(rmds[i]) == "."){
       render(rmds[i], output_format = pdf_document(fig_caption = FALSE), 
              output_dir = dirname(rmds[i]))
