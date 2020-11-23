@@ -11,7 +11,7 @@ shinyUI(fluidPage(
       tabsetPanel(type = "tabs", 
                   tabPanel("Tab 1", br(), textOutput("out1")), 
                   tabPanel("Tab 2", br(), textOutput("out2")), 
-                  tabPanel("Tab 2", br(), textOutput("out3"))
+                  tabPanel("Tab 3", br(), textOutput("out3"))
       )
     )
   )
